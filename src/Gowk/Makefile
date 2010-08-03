@@ -105,6 +105,7 @@ FILES =  \
 	Main.cs \
 	MainWindow.cs \
 	Security/CertificateValidation.cs \
+	Security/Crypter.cs \
 	Services/SettingsService.cs \
 	Services/TelemeterService.cs 
 

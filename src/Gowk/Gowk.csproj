@@ -89,6 +89,7 @@
     <Compile Include="gtk-gui\Gowk.MainWindow.cs" />
     <Compile Include="AboutDialog.cs" />
     <Compile Include="Services\SettingsService.cs" />
+    <Compile Include="Security\Crypter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Security\" />

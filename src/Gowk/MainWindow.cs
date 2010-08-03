@@ -182,7 +182,7 @@ namespace Gowk
 				object password = SettingsService.Get(SettingsService.PasswordKey);
 				if ((password != null) && (password is string))
 				{
-					return password as string;
+					return Crypter.Decrypt((password as string));
 				}
 			}
 			catch (Exception ex)
@@ -286,7 +286,7 @@ namespace Gowk
 			if (!string.IsNullOrEmpty(UserIDEntry.Text) && !string.IsNullOrEmpty(PasswordEntry.Text))
 			{
 				SettingsService.Set(SettingsService.UserIDKey, UserIDEntry.Text);
-				SettingsService.Set(SettingsService.PasswordKey, PasswordEntry.Text);
+				SettingsService.Set(SettingsService.PasswordKey, Crypter.Encrypt(PasswordEntry.Text));
 				SettingsService.Set(SettingsService.RefreshIntervalKey, IntervalScale.Value);
 				
 				ThreadDispatch.ChangeInterval(m_loopID, (int)(GetInterval() * 60 * 1000));
