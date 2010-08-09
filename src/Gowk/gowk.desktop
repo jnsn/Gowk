@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Gowk
+Exec=gowk
+Terminal=false
+GenericName=Gowk
+Comment=A system tray indicator for the FUP Telemeter Service.
+Icon=gowk-icon
+Categories=Utility;
