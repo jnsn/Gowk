@@ -158,7 +158,7 @@ install-local: $(ASSEMBLY) $(ASSEMBLY_MDB)
 	mkdir -p '$(DESTDIR)$(datadir)/applications'
 	$(call cp,$(GOWK_DESKTOP),$(DESTDIR)$(datadir)/applications)
 	mkdir -p '$(DESTDIR)$(datadir)'
-	$(call cp,$(GOWK_ICON_PNG),$(DESTDIR)$(datadir))
+	$(call cp,$(GOWK_ICON_PNG),$(DESTDIR)$(datadir)/pixmaps)
 	$(call cp,$(ANCULUS_CORE_DLL),$(DESTDIR)$(libdir)/$(PACKAGE))
 	$(call cp,$(GOWK_EXE_MDB),$(DESTDIR)$(libdir)/$(PACKAGE))
 	mkdir -p '$(DESTDIR)$(bindir)'
