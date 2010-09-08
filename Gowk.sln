@@ -69,6 +69,6 @@ Global
 		$8.LineAlign = 0
 		$7.inheritsSet = Mono
 		description = A system tray indicator for the FUP Telemeter Service.
-		version = 1.0.0
+		version = 1.0.1
 	EndGlobalSection
 EndGlobal

@@ -69,22 +69,22 @@ GOWK_ICON_PNG = $(BUILD_DIR)/gowk-icon.png
 ANCULUS_CORE_DLL = $(BUILD_DIR)/Anculus.Core.dll
 GOWK = $(BUILD_DIR)/gowk
 
-FILES = \
-	gtk-gui/generated.cs \
-	Main.cs \
+FILES =  \
 	AssemblyInfo.cs \
+	Gowk.Gui/AboutDialog.cs \
+	Gowk.Gui/MainWindow.cs \
 	Gowk.Security/CertificateValidation.cs \
 	Gowk.Security/Crypter.cs \
 	Gowk.Services/SettingsService.cs \
 	Gowk.Services/TelemeterService.cs \
-	Gowk.Gui/MainWindow.cs \
+	Gowk.Services/UpdateMeterService.cs \
+	gtk-gui/generated.cs \
 	gtk-gui/Gowk.Gui.MainWindow.cs \
-	Gowk.Gui/AboutDialog.cs \
-	Gowk.Services/UpdateMeterService.cs 
+	Main.cs 
 
 DATA_FILES = 
 
-RESOURCES = \
+RESOURCES =  \
 	gtk-gui/gui.stetic \
 	Resources/COPYING \
 	Resources/icon.png \
@@ -98,21 +98,22 @@ RESOURCES = \
 	Resources/stage-8.png \
 	Resources/stage-9.png 
 
-EXTRAS = \
+EXTRAS =  \
 	gowk.desktop \
-	gowk-icon.png \
-	gowk.in 
+	gowk.in \
+	gowk-icon.png 
 
 REFERENCES =  \
-	System \
-	-pkg:gtk-sharp-2.0 \
-	-pkg:glib-sharp-2.0 \
-	-pkg:glade-sharp-2.0 \
+	../../lib/Anculus.Core.dll \
 	Mono.Posix \
 	-pkg:gconf-sharp-2.0 \
+	-pkg:glade-sharp-2.0 \
+	-pkg:glib-sharp-2.0 \
+	-pkg:gtk-sharp-2.0 \
+	-pkg:notify-sharp \
+	System \
 	System.Web.Services \
-	System.Xml \
-	-pkg:notify-sharp
+	System.Xml
 
 DLL_REFERENCES =  \
 	../../lib/Anculus.Core.dll

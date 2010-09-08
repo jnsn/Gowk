@@ -8,7 +8,7 @@
     <ProjectGuid>{6921CD71-9D4D-428C-ABC2-42299BC48A64}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Gowk</RootNamespace>
-    <ReleaseVersion>1.0.0</ReleaseVersion>
+    <ReleaseVersion>1.0.1</ReleaseVersion>
     <AssemblyName>Gowk</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
@@ -134,6 +134,7 @@
     <Content Include="gowk-icon.png">
       <DeployService-Deploy>true</DeployService-Deploy>
     </Content>
+    <Content Include="gowk.in" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
